@@ -1,167 +1,623 @@
 <!DOCTYPE html>
+<!-- result -->
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>"Интернет-магазин" - площадка для Вас</title>
+	<title>Определитель аккордов для гитары</title>
     <link rel="stylesheet" href="css/style.css" >
 	<!-- <link rel="stylesheet" href="slick/slick.css">
 	<link rel="stylesheet" href="slick/slick-theme.css"> -->
 </head>
 
 <body>
-<div class="flexbox column">
-	<header class="site-header">
-		<a href="index.html">
-			<div>
-				<h1>Онлайн-магазин</h1>
-				<h4>Всё для Вас!</h4>
-			</div>
-		</a>
-	</header>
-	<div class="container align-itemsflex-start flexbox space_between">
-		<div class="content margin-right10px">
-			<h1 class="head inline_block center">Площадка <span class="big">ТОВАРОВ</span> со всего мира!</h1>
-			<div class="flexbox column">
-		<section>
-			<div class="flexbox space_between align-items_center nomargin">
-				<figure>
-					<figcaption ><a href="index.html" title="Электрооборудование">Электрооборудование</figcaption>
-					<img src="images/ElObAv-1.jpg" alt=""></a>
-				</figure>
-				<figure>
-					<figcaption><a href="index.html" title="Для дома">Для дома</figcaption>
-					<img src="images/570404250_w640_h640_tovary-dlya-doma.jpg" alt=""></a>
-				</figure>
-				<figure>
-					<figcaption><a href="index.html" title="Мебель">Мебель</figcaption>
-					<img src="images/mnr03.jpg" alt=""></a>
-				</figure>
-				<figure>
-					<figcaption><a href="index.html" title="Стройматериалы">Стройматериалы</figcaption>
-					<img src="images/stroitelnie_materiali.jpg" alt=""></a>
-				</figure>
-			</div>
-		</section>
-		<section>	
-			<div class="flexbox space_between align-items_center nomargin">
-				<figure>
-					<figcaption ><a href="index.html" title="Музыкальные товары">Музыкальные инструменты</figcaption>
-					<img src="images/unnamed.jpg" alt="музыкальные инструменты"></a>
-				</figure>
-				<figure>
-					<figcaption><a href="index.html" title="Товары для домашних животных">Товары для домашних животных</figcaption>
-					<img src="images/unnamed (1).jpg" alt="Домашние животные"></a>
-				</figure>
-				<figure>
-					<figcaption><a href="index.html" title="Одежда, обувь, аксессуары">Одежда, обувь, аксессуары</figcaption>
-					<img src="images/markirovka-odezhdy.jpg" alt="Одежда"></a>
-				</figure>
-				<figure>
-					<figcaption><a href="index.html" title="Канцтовары">Канцтовары</figcaption>
-					<img src="images/kanctovary_dlya_shkoly.width-800.jpg" alt="Канцтовары"></a>
-				</figure>
-			</div>
-		</section>
-		<section>
-			<div class="flexbox space_between align-items_center nomargin">
-				<figure>
-					<figcaption ><a href="index.html" title="Продукты питания">Продукты питания</figcaption>
-					<img src="images/depositphotos_26003555-stock-photo-assorted-grocery-products-isolated-on.jpg" alt="Продукты питания"></a>
-				</figure>
-				<figure>
-					<figcaption><a href="index.html" title="Детские товары">Детские товары</figcaption>
-					<img src="images/1626245810.5789.jpg" alt="Игрушки Детские товары"></a>
-				</figure>
-				<figure>
-					<figcaption><a href="index.html" title="Компьютерная техника">Компьютерная техника</figcaption>
-					<img src="images/1537986267_zastavka.jpg" alt="Компьютерная техника"></a>
-				</figure>
-				<figure>
-					<figcaption><a href="index.html" title="Новогодние украшения">Новогодние украшения</figcaption>
-					<img src="images/1.jpg" alt="Новогодние украшения"></a>
-				</figure>
-			</div>
-		</section>
-		<section>
-			<div class="flexbox space_between align-items_center nomargin">
-				<figure>
-					<figcaption ><a href="index.html" title="Сад и огород">Сад и огород</figcaption>
-					<img src="images/f557d50c-d0bb-4885-b913-255a6b49c31e.jpg" alt="Товары для сада"></a>
-				</figure>
-				<figure>
-					<figcaption><a href="index.html" title="Текстиль">Текстиль</figcaption>
-					<img src="images/a041b1c076a4a2931b5ea43700abd874.jpg" alt="текстиль спальное бельё"></a>
-				</figure>
-				<figure>
-					<figcaption><a href="index.html" title="Кухня">Кухня</figcaption>
-					<img src="images/Top-10-Best-Home-Utensil-Set-Review-in-2016-450x339-1.jpg" alt="посуда"></a>
-				</figure>
-				<figure>
-					<figcaption><a href="index.html" title="Автотовары">Автотовары</figcaption>
-					<img src="images/37a126c9227556f2cdd14fda31b7ccd7.jpg" alt="автозапчасти автотовары"></a>
-				</figure>
-			</div>
-		</section>
-		</div>
+	<header>Определитель аккордов для гитары</header>
+	<main><p class="margin-left">Напишите здесь лад, на которой зажата струна, или укажите этот лад на сруне ниже. Если струна открыта, пишите или жмите "0", а если не играется, то "X" (Без или с кавычками).</p></div>
+	<div class="flexbox input-box">
+		<textarea id="six" placeholder="Шестая струна"></textarea>
+		<textarea id="five" placeholder="Пятая струна"></textarea>
+		<textarea id="four" placeholder="Четвёртая струна"></textarea>
+		<textarea id="three" placeholder="Третья струна"></textarea>
+		<textarea id="two" placeholder="Вторая струна"></textarea>
+		<textarea id="one" placeholder="Первая струна"></textarea>
+		<button id="resultbutton">Нажмите</button>
 	</div>
-	<div class="navigation_menu">
-		<nav class="bg_grey margin-right10px">
-			<div> 
-				<a href="index.html"><img class="bg_blue" src="images/1.png" width="100" height="100" alt=""></a>
-				<h3>Навигация</h3> 
-				<ul>
-				<li><a href="index.html">На главную</a></li>
-				<li><a href="index.html">На главную</a></li>
-				<li><a href="index.html">На главную</a></li>
-				<li><a href="index.html">На главную</a></li>
-				<li><a href="index.html">На главную</a></li>
-				<li><a href="index.html">На главную</a></li>
-				<li><a href="index.html">На главную</a></li>
-				</ul>
-			</div>
-		</nav>
-		<div>
-			<aside>
+<div class="margin-left">Здесь будет Ваш Аккорд:</div>
+<div class="high"><div id="info"></div>
+<div class="flex">
+	<div><div id="result1"></div><div id="info1"></div></div>
+	<div><div id="result2"></div><div id="info2"></div></div>
+	<div><div id="result3"></div><div id="info3"></div></div>
+	<div><div id="result4"></div><div id="info4"></div></div>
+	<div><div id="result5"></div><div id="info5"></div></div>
+	<div><div id="result6"></div><div id="info6"></div></div>
 
-			</aside>
-		</div>
-	</div>
-		<aside>
-			<input class="width90pr margin10px" type="text" list="cities">
-			<datalist id="cities">
-				<option value="Москва"></option>
-				<option value="Нижний Новгород"></option>
-				<option value="Казань"></option>
-			</datalist>
-			<a href="registration.html">Зарегистрироваться</a>|<a href="registration.html">Войти</a>
-			<figure class="nomargin">
-				<img src="https://thumbs.dreamstime.com/b/%D0%BA%D1%83%D1%87%D0%B0-%D0%BA%D0%B0%D1%80%D1%82%D0%BE%D0%BD%D0%BD%D1%8B%D1%85-%D0%BA%D0%BE%D1%80%D0%BE%D0%B1%D0%BE%D0%BA-%D1%88%D1%82%D0%B0%D0%B1%D0%B5%D0%BB%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%BD%D1%8B%D1%85-%D0%B7%D0%B0%D0%B3%D0%B5%D1%80%D0%BC%D0%B5%D1%82%D0%B8%D0%B7%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%BD%D1%8B%D1%85-%D1%82%D0%BE%D0%B2%D0%B0%D1%80%D0%BE%D0%B2-100156780.jpg" alt="доставка">
-				<figcaption class="center">Доставка включена</figcaption>
-			</figure>
-				<iframe src="https://www.youtube.com/embed/FcSw27UZLWw" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-		</aside>
-	</div>
+</div></div>
+<div class="animated-margin">
+<hr>
+<div><div class="chord-sounds">
+	<button class="sixb" onclick="button(this.innerHTML, this.className)">X</button>
+	<button class="fiveb" onclick="button(this.innerHTML, this.className)">X</button>
+	<button class="fourb" onclick="button(this.innerHTML, this.className)">X</button>
+	<button class="threeb" onclick="button(this.innerHTML, this.className)">X</button>
+	<button class="twob" onclick="button(this.innerHTML, this.className)">X</button>
+	<button class="oneb" onclick="button(this.innerHTML, this.className)">X</button>
+	</dIV>
+	<div class="chord-sounds">
+		<button class="sixb" onclick="button(this.innerHTML, this.className)">0</button>
+		<button class="fiveb" onclick="button(this.innerHTML, this.className)">0</button>
+		<button class="fourb" onclick="button(this.innerHTML, this.className)">0</button>
+		<button class="threeb" onclick="button(this.innerHTML, this.className)">0</button>
+		<button class="twob" onclick="button(this.innerHTML, this.className)">0</button>
+		<button class="oneb" onclick="button(this.innerHTML, this.className)">0</button>
+		</dIV>
+	<br>
+	<div class="chord-sounds zero-and-X">
+	<span class="is-six-playing">X</span> 
+	<span class="is-five-playing">X</span>
+	<span class="is-four-playing">X</span>
+	<span class="is-three-playing">X</span>
+	<span class="is-two-playing">X</span>
+	<span class="is-one-playing">X</span>
 </div>
-<footer>
-			<div class="margin0">
-				<div class="flexbox">
-					<a class="padding_10px" href="mailto:super.r1m199@yandex.ru?subject=Для%20связи:">super.r1m199@yandex.ru<h6 class="margin-top20px color_white">copyrighted by Tagir.corp 1 day ago</h6>
-					</a>
-					<a class="padding_10px" href="http://jigsaw.w3.org/css-validator/check/referer">
-						<img class="noborder"
-						src="http://jigsaw.w3.org/css-validator/images/vcss"
-						alt="Правильный CSS!" />
-					</a>
-				</div>				 
-			</div>
-		</footer>
-	<!-- <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-	<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-	<script type="text/javascript" src="slick/slick.min.js"></script>
-				 -->
 
+</div>
+<div class="flex-info"><div class="chord">
+	
+		<div class="flex-test h0">
+			<div class="six"></div>
+			<div class="five"></div>
+			<div class="four"></div>
+			<div class="three"></div>
+			<div class="two"></div>
+			<div class="one"></div>
+		</div>
+		<div class="flex-vert">
+		
+		</div>
+</div>
+<aside>
+	<p>
+		Хотелось бы предупредить, что данный алгоритм не может распознать все аккорды. 
+		В некоторых случаях появляются лишние "add" и "sus", а "add2" от "add9" отличить программа не может, 
+		как и "sus4#" или "sus4+", а также "lyd", поскольку это то же самое. Вы увидете несколько строк - это различные 
+		алгоритмы для определения аккордов. Рекомендуем использовать самый краткий вариант.
+	</p>
+	<p>
+	Самая тонкая струна - первая, чуть потолще - вторая и так до шестой, самой толстой.</p>
+	<p>Нажмите на лад на струнах, Вы получите результаты. Условные обозначения: <br>
+	0 - открытая струна<br>
+	X - струна не играется<br>
+	1-40 - номера ладов и порожков<br>
+	<div class="center">
+			<div class="ball">
+			</div> 
+	 - зажатый лад
+	</div>
+	</p><!-- здесь ошибка -->
+	<table>
+		<thead>
+			<tr>
+			<td>Латинское (или английское) обозначение нот</td><td>Обычное обозначение нот</td>
+			</tr>
+		</thead>
+		<tbody>
+	<tr>
+	<td>C</td><td>До</td>
+	</tr><tr class="blacknwhite">
+	<td>C#, <br>Db</td><td>До-диез, <br>Ре-бемоль</td>
+	</tr><tr>
+	<td>D</td><td>Ре</td>
+	</tr><tr class="blacknwhite">
+	<td>D#, <br>Eb</td><td>Ре-диез, <br>Ми-бемоль</td>
+	</tr><tr>
+	<td>E</td><td>Ми</td>
+	</tr><tr>
+	<td>F</td><td>Фа</td>
+	</tr><tr class="blacknwhite">
+	<td>F#, <br>Gb</td><td>Фа-диез, <br>Соль-бемоль</td>
+	</tr><tr>
+	<td>G</td><td>Соль</td>
+	</tr><tr class="blacknwhite">
+	<td>G#, <br>Ab</td><td>Соль-диез, <br>Ля-бемоль</td>
+	</tr><tr>
+	<td>A</td><td>Ля</td>
+	</tr><tr class="blacknwhite">
+	<td>A#, <br>Bb</td><td>Ля-диез, <br>Си-бемоль</td>
+	</tr><tr>
+	<td>B</td><td>Си</td>
+	</tr>
+	</tbody>
+	</table>
+	</aside>
+</div>
+</main>
+<footer class="flex">
+	<div>
+	<p>
+		Этот сайт был сделан <a href="https://www.youtube.com/channel/UCIBu6R7mA10AMRjfQ99j65A" class="orange">Супер Гирчиком</a> для общего пользования.
+		 Если Вы обнаружите какую-то ошибку - обращайтесь по электронной почте <a class="orange" href="mailto:super.r1m199@yandex.ru">super.r1m199@yandex.ru</a>.
+	</p>
+	<p>
+		Если хотите поддержать автора - подпишитесь на канал и поставьте лайк под видео про этот сайт (его ещё нет). Я буду очень благодарен Вам.
+	</p>
+</div><figure>
+	<a href="https://www.youtube.com/channel/UCIBu6R7mA10AMRjfQ99j65A"><img src="/images/НОВЫЙ АВАТАР 2 невидимый.png" alt="channel" style="min-width:40px ;min-height: 40px;max-width: 100px;max-height: 100px;"></a>
+</figure>
+</footer>
+<div style="clear:both"></div>
+	<script>
+let six = document.querySelector(".is-six-playing");
+let five = document.querySelector(".is-five-playing");
+let four = document.querySelector(".is-four-playing");
+let three = document.querySelector(".is-three-playing");
+let two = document.querySelector(".is-two-playing");
+let one = document.querySelector(".is-one-playing");
+
+
+for(let i = 1; i <= 41; i++ ) {
+ document.querySelector(".flex-vert").innerHTML += `
+	<div class="line" id="line${i==41?"":i}"><span style="width:0px;display:inline-block;margin-top:23px">${i==41?"":i} </span>
+				<button class="sixb" onclick="button(this.parentNode.id, this.className)"> </button>
+				<button class="fiveb" onclick="button(this.parentNode.id, this.className)"> </button>
+				<button class="fourb" onclick="button(this.parentNode.id, this.className)"> </button>
+				<button class="threeb" onclick="button(this.parentNode.id, this.className)"> </button>
+				<button class="twob" onclick="button(this.parentNode.id, this.className)"> </button>
+				<button class="oneb" onclick="button(this.parentNode.id, this.className)"> </button>
+	</div>
+	`;
+}
+let antiStarter = {func: function getAccord(something) { for (let x = 1; x <= 6; x++){
+			// document.querySelector(".high").style.minHeight = "400px";
+			document.getElementById(`result${x}`).innerHTML = "";
+			document.getElementById(`info${x}`).innerHTML = "";//Очистка прошлых результатов
+			document.getElementById(`info`).innerHTML = "";
+};
+if (document.getElementById("six").value<0||
+document.getElementById("five").value<0||
+document.getElementById("four").value<0||
+document.getElementById("three").value<0||
+document.getElementById("two").value<0||
+document.getElementById("one").value<0
+){info.innerHTML = "Вы ввели отрицательное значение.";}else{
+			
+			
+			
+	
+
+		let a = +document.getElementById("six").value;
+		let b = +document.getElementById("five").value + 5;
+		let c = +document.getElementById("four").value + 10;
+		let d = +document.getElementById("three").value + 15;
+		let e = +document.getElementById("two").value + 19;
+		let f = +document.getElementById("one").value + 24;
+
+let numbers = [];
+
+
+
+six.style.top = "auto";
+	five.style.top = "auto";
+	four.style.top = "auto";
+	three.style.top = "auto";
+	two.style.top = "auto";
+	one.style.top = "auto";
+	
+if (String(a) == "NaN") {six.innerHTML = "X";} else {numbers.push(a);
+if(	+document.getElementById("six").value == "0") {six.innerHTML = "0";} else {
+	if (document.getElementById("six").value>40) {} else {
+	six.innerHTML=`<span class="ball"></span>`; six.style.top = (+document.getElementById("six").value*40)+"px";}
+}} // Переделать на isNaN не получилось
+if (String(b) == "NaN") {five.innerHTML = "X"} else {numbers.push(b);
+	if(	+document.getElementById("five").value == "0") {five.innerHTML = "0";} else {
+		if (document.getElementById("five").value>40) {} else {
+	five.innerHTML=`<span class="ball"></span>`; five.style.top = (+document.getElementById("five").value*40)+"px";}
+}}
+if (String(c) == "NaN") {four.innerHTML = "X";} else {numbers.push(c)
+	if(	+document.getElementById("four").value == "0") {four.innerHTML = "0";} else {
+		if (document.getElementById("four").value>40) {} else {
+			four.innerHTML=`<span class="ball"></span>`; four.style.top = (+document.getElementById("four").value*40)+"px";}
+}}
+if (String(d) == "NaN") {three.innerHTML = "X";} else {numbers.push(d)
+	if(	+document.getElementById("three").value == "0") {three.innerHTML = "0";} else {
+		if (document.getElementById("three").value>40) {} else {
+			three.innerHTML=`<span class="ball"></span>`; three.style.top = (+document.getElementById("three").value*40)+"px";}
+}}
+if (String(e) == "NaN") {two.innerHTML = "X";} else {numbers.push(e)
+	if(	+document.getElementById("two").value == "0") {two.innerHTML = "0";} else {
+		if (document.getElementById("two").value>40) {} else {
+			two.innerHTML=`<span class="ball"></span>`; two.style.top = (+document.getElementById("two").value*40)+"px";}
+}}
+if (String(f) == "NaN") {one.innerHTML = "X";} else {numbers.push(f)
+	if(	+document.getElementById("one").value == "0") {one.innerHTML = "0";} else {
+		if (document.getElementById("one").value>40) {} else {
+			one.innerHTML=`<span class="ball"></span>`; one.style.top = (+document.getElementById("one").value*40)+"px";}
+}
+}
+
+
+
+if (document.getElementById("six").value>40||
+document.getElementById("five").value>40||
+document.getElementById("four").value>40||
+document.getElementById("three").value>40||
+document.getElementById("two").value>40||
+document.getElementById("one").value>40) {info.innerHTML = `У вас странная гитара, больше 40 ладов...`;} else {
+
+if (numbers.length == 0) {
+	info.innerHTML = "Введите хотя бы одно значение";
+} else { if (numbers.length == 1) { 
+	let realBass = numbers[0];
+while(realBass>=12){realBass-=12;}
+
+
+
+	info.innerHTML = `Это нота ${realBass == 0?"E"
+ :realBass == 1?"F"
+ :realBass == 2?"F#"
+ :realBass == 3?"G"
+ :realBass == 4?"G#"
+ :realBass == 5?"A"
+ :realBass == 6?"A#"
+ :realBass == 7?"B"
+ :realBass == 8?"C"
+ :realBass == 9?"C#"
+ :realBass == 10?"D"
+ :"D#" // определяем самую низкую басовую ноту
+}`;
+} else {
+
+Array.prototype.max = function() {
+  return Math.max.apply(null, this);
+};
+Array.prototype.min = function() {
+  return Math.min.apply(null, this);
+};
+// Конец шаблона
+
+let realBass = numbers.min() // Переопределяем самую низкую ноту
+while (realBass >= 12) {realBass-=12;}
+
+
+let setAccord = new Set(); // исключим повторение при помощи new Set()
+numbers.forEach(element => {
+	while (element >=12) {element-=12;}
+	setAccord.add(element) 
+})
+let smallNumbers = []
+numbers.forEach(element => {
+	while (element >=12) {element-=12;}
+	smallNumbers.push(element) 
+})
+
+let bass //Основная басовая нота аккорда
+
+function bassEquals(object, bass) {object.result.innerHTML += 
+  bass == 0?"E"
+ :bass == 1?"F"
+ :bass == 2?"F#"
+ :bass == 3?"G"
+ :bass == 4?"G#"
+ :bass == 5?"A"
+ :bass == 6?"A#"
+ :bass == 7?"B"
+ :bass == 8?"C"
+ :bass == 9?"C#"
+ :bass == 10?"D"
+ :"D#" // определяем басовую ноту аккорда
+} ;
+
+console.log("Внизу сет ещё до сложных вычислений:")
+	for (let item of setAccord) {console.log(item);}
+
+
+	let result1Obj = {
+	result: document.getElementById("result1"),
+	info: document.getElementById("info1"),
+	// whatTypeOfChord: whatTypeOfChord(),
+	//bassEquals: bassEquals(),
+}
+
+let result2Obj = {
+	result: document.getElementById("result2"),
+	info: document.getElementById("info2"),
+	// whatTypeOfChord: whatTypeOfChord()	,
+	//bassEquals: bassEquals()
+}
+
+let result3Obj = {
+	result: document.getElementById("result3"),
+	info: document.getElementById("info3"),
+	// whatTypeOfChord: whatTypeOfChord()	,
+//	bassEquals: bassEquals()
+}
+
+let result4Obj = {
+	result: document.getElementById("result4"),
+	info: document.getElementById("info4"),
+//	whatTypeOfChord: whatTypeOfChord()	,
+	//bassEquals: bassEquals()
+}
+
+let result5Obj = {
+	result: document.getElementById("result5"),
+	info: document.getElementById("info5"),
+//whatTypeOfChord: whatTypeOfChord()	,
+	//bassEquals: bassEquals()
+}
+
+let result6Obj = {
+	result: document.getElementById("result6"),
+	info: document.getElementById("info6"),
+	//whatTypeOfChord: whatTypeOfChord()	,
+	//bassEquals: bassEquals()
+}
+
+
+let cloneSetAccord = Array.from(setAccord)
+
+console.log("проверка 1 пройдена") 
+
+for (let note of setAccord) {
+		let bass = note;
+		let cloneSetAccord = Array.from(setAccord);
+		if (note == cloneSetAccord[0]){
+		bassEquals(result1Obj, bass);
+		whatTypeOfChord(result1Obj, bass);
+	}
+	if (note == cloneSetAccord[1]){
+		bassEquals(result2Obj, bass);
+		whatTypeOfChord(result2Obj, bass);
+	}
+	if (note == cloneSetAccord[2]){
+		bassEquals(result3Obj, bass);
+		whatTypeOfChord(result3Obj, bass);
+	}
+	if (note == cloneSetAccord[3]){
+		bassEquals(result4Obj, bass);
+		whatTypeOfChord(result4Obj, bass);
+	}
+	if (note == cloneSetAccord[4]){
+		bassEquals(result5Obj, bass);
+		whatTypeOfChord(result5Obj, bass);
+	}
+	if (note == cloneSetAccord[5]){	
+		bassEquals(result6Obj, bass);
+		whatTypeOfChord(result6Obj, bass);
+	}
+	console.log("проверка 2 пройдена") 
+}
+
+
+function whatTypeOfChord(object, bass) {if (setAccord.has(bass+4)||setAccord.has(bass-8)) {console.log("есть мажор!"); object.info.innerHTML  = `Мажорный аккорд ${object.result.innerHTML}. `;
+} else {
+	if (setAccord.has(bass+3)||setAccord.has(bass-9)) {console.log("есть минор!"); 
+	object.info.innerHTML  = `Минорный аккорд ${object.result.innerHTML}. `;
+	if (setAccord.has(bass+7)||setAccord.has(bass-5)||setAccord.has(bass+8)||setAccord.has(bass-4)){object.result.innerHTML  += "m";} 
+} else {
+	object.info.innerHTML  = `Немажорный и неминорный аккорд ${object.result.innerHTML}. `; 
+// 	if (!(setAccord.has(bass+7)||setAccord.has(bass-5))&&
+// 	!(setAccord.has(bass+3)||setAccord.has(bass+4)||setAccord.has(bass-8)||setAccord.has(bass-9)||
+// 	setAccord.has(bass+1)||setAccord.has(bass+2)||setAccord.has(bass-11)||setAccord.has(bass-10)||//2 2-
+// 	setAccord.has(bass+5)||setAccord.has(bass+6)||setAccord.has(bass-7)||setAccord.has(bass-6)// 4 4-
+// )){object.result.innerHTML  += "sus"} else {}
+}}
+		if ((setAccord.has(bass+4)||setAccord.has(bass-8))&&(setAccord.has(bass+3)||setAccord.has(bass-9))) {console.log("есть мажор и минор?!"); 
+		object.info.innerHTML  = `Мажорный и минорный одновременно аккорд ${object.result.innerHTML}. `;
+}
+if ((setAccord.has(bass+7)||setAccord.has(bass-5))&&!(setAccord.has(bass+3)||setAccord.has(bass+4)||setAccord.has(bass-8)||setAccord.has(bass-9)||
+setAccord.has(bass+1)||setAccord.has(bass+2)||setAccord.has(bass-11)||setAccord.has(bass-10)||
+setAccord.has(bass+5)||setAccord.has(bass+6)||setAccord.has(bass-7)||setAccord.has(bass-6)||
+setAccord.has(bass+8)||setAccord.has(bass+9)||setAccord.has(bass-4)||setAccord.has(bass-3)||
+setAccord.has(bass+10)||setAccord.has(bass+11)||setAccord.has(bass-2)||setAccord.has(bass-1))){object.result.innerHTML  += "5";object.info.innerHTML += "Это Power Chord или квинтаккорд. ";}
+if ((setAccord.has(bass+7)||setAccord.has(bass-5))&&(setAccord.has(bass+8)||setAccord.has(bass-4))) {object.result.innerHTML  += "6-";object.info.innerHTML += "Шестая ступень уменьшена. ";}
+//if (!setAccord.has(bass+7)&&setAccord.has(bass+8)) {result1.innerHTML  += "5+";info.innerHTML += "";}
+if (setAccord.has(bass+9)||setAccord.has(bass-3)) {object.result.innerHTML  += "6";object.info.innerHTML += "Присутствует шестая ступень. ";}
+if (setAccord.has(bass+10)||setAccord.has(bass-2)) {
+	if ((setAccord.has(bass+4)||setAccord.has(bass+3)||setAccord.has(bass-8)||setAccord.has(bass-9)) && (setAccord.has(bass+2)||setAccord.has(bass-10))){if (setAccord.has(bass+5)||setAccord.has(bass-7)) { if (setAccord.has(bass+7)||setAccord.has(bass-5)){object.result.innerHTML  += "13";object.info.innerHTML += "Есть 7, 9, 11 и 13 ступени.";} else {object.result.innerHTML  += "11";object.info.innerHTML += "Есть 7, 9 и 11 ступени.";}} else {object.result.innerHTML  += "9";object.info.innerHTML += "Есть 7 и 9 ступени.";}} else {
+		object.result.innerHTML  += "7";object.info.innerHTML += "Септаккорд. ";
+	}
+}
+if (setAccord.has(bass+11)||setAccord.has(bass-1)) {object.result.innerHTML  += "maj7";object.info.innerHTML += "Увеличена 7 ступень. ";}
+
+		if (((setAccord.has(bass+4)||setAccord.has(bass-8))||(setAccord.has(bass+3)||setAccord.has(bass-9)))&&(setAccord.has(bass+1)||setAccord.has(bass-11))){object.result.innerHTML  += "add2-"
+}else{ 
+	if ((!setAccord.has(bass+4)||!setAccord.has(bass-8)||!setAccord.has(bass+3)||!setAccord.has(bass-9)) && (setAccord.has(bass+1)||setAccord.has(bass-11))) {object.result.innerHTML  += "sus2-"}
+}
+
+	if ((setAccord.has(bass+4)||setAccord.has(bass+3)||setAccord.has(bass-8)||setAccord.has(bass-9)) && (setAccord.has(bass+2)||setAccord.has(bass-10))&&!(setAccord.has(bass+10)||setAccord.has(bass-2))) {object.result.innerHTML  += "add2"
+	}else{ 
+	if (!(setAccord.has(bass+4)||setAccord.has(bass+3)||setAccord.has(bass-8)||setAccord.has(bass-9)) && (setAccord.has(bass+2)||setAccord.has(bass-10))) {object.result.innerHTML  += "sus2"}
+}
+
+		if ((setAccord.has(bass+4)||setAccord.has(bass+3)||setAccord.has(bass-8)||setAccord.has(bass-9)) && (setAccord.has(bass+5)||setAccord.has(bass-7)) ) {if ((setAccord.has(bass+4)||setAccord.has(bass+3)||setAccord.has(bass-8)||setAccord.has(bass-9)) && (setAccord.has(bass+2)||setAccord.has(bass-10))){if (setAccord.has(bass+5)||setAccord.has(bass-7)) {}}else {object.result.innerHTML  += "add4"}
+} else {
+	if ((!setAccord.has(bass+4)||!setAccord.has(bass+3)||!setAccord.has(bass-8)||!setAccord.has(bass-9)) && (setAccord.has(bass+5)||setAccord.has(bass-7)) ) {object.result.innerHTML += "sus4"}
+	}
+	
+		if (((setAccord.has(bass+4)||setAccord.has(bass+3)||setAccord.has(bass-8)||setAccord.has(bass-9)) && (setAccord.has(bass+6)||setAccord.has(bass-6)))&&(setAccord.has(bass+7)||setAccord.has(bass-5))) {object.result.innerHTML  += "add4+";
+		object.info.innerHTML += "Это лидийский аккорд с добавленной 4+ или 11+ ступенью. "
+} else {
+	if ((!setAccord.has(bass+4)||!setAccord.has(bass+3)||!setAccord.has(bass-8)||!setAccord.has(bass-9)) && (setAccord.has(bass+6)||setAccord.has(bass-6))&&(setAccord.has(bass+7)||setAccord.has(bass-5))) {object.result.innerHTML += "sus4+"}
+	}
+
+ 	if ((setAccord.has(bass+6)||setAccord.has(bass-6))&&!(setAccord.has(bass+7)||setAccord.has(bass-5))) { if(setAccord.has(bass+3)||setAccord.has(bass-9)){object.result.innerHTML  += "dim";object.info.innerHTML += "Это уменьшенный аккорд с тритоновым звучанием. "
+} else {
+	object.result.innerHTML  += "5-";object.info.innerHTML += "Аккорд с тритоновым звучанием."}
+ } 
+ if ((setAccord.has(bass+8)||setAccord.has(bass-4))&&!(setAccord.has(bass+7)||setAccord.has(bass-5))) { if(setAccord.has(bass+4)||setAccord.has(bass-8)){object.result.innerHTML  += "aug";object.info.innerHTML += "Это увеличенный аккорд. "
+} else {
+	object.result.innerHTML  += "5+";object.info.innerHTML += "Аккорд с увеличенной квинтой. Пятая ступень увеличена. "}
+ } 
+
+
+
+	console.log("Внизу сет:")
+	for (let item of setAccord) {console.log(item) }
+	console.log("Внизу массив:")
+	for (let num of numbers) {console.log(num)}
+	console.log("Внизу маленький массив:")
+	for (let smallNum of smallNumbers) {console.log(smallNum)}
+	
+function realBassEquals() {	object.result.innerHTML += 
+ realBass == 0?"/E"
+ :realBass == 1?"/F"
+ :realBass == 2?"/F#"
+ :realBass == 3?"/G"
+ :realBass == 4?"/G#"
+ :realBass == 5?"/A"
+ :realBass == 6?"/A#"
+ :realBass == 7?"/B"
+ :realBass == 8?"/C"
+ :realBass == 9?"/C#"
+ :realBass == 10?"/D"
+ :"/D#" // определяем самую низкую басовую ноту
+}
+	if (bass!=realBass) {
+		realBassEquals()
+		object.info.innerHTML += `Однако в басу нота ${realBass == 0?"E"
+ :realBass == 1?"F"
+ :realBass == 2?"F#"
+ :realBass == 3?"G"
+ :realBass == 4?"G#"
+ :realBass == 5?"A"
+ :realBass == 6?"A#"
+ :realBass == 7?"B"
+ :realBass == 8?"C"
+ :realBass == 9?"C#"
+ :realBass == 10?"D"
+ :"D#" // определяем самую низкую басовую ноту
+}`}
+
+
+console.log(`бас :${bass}`)
+if (bass == undefined)  {
+object.info.innerHTML = " Упс, что-то пошло не так. мы не смогли определить основную ноту аккорда. "
+if (bass!=realBass) {
+ object.info.innerHTML += `Однако в басу нота ${realBass == 0?"E"
+ :realBass == 1?"F"
+ :realBass == 2?"F#"
+ :realBass == 3?"G"
+ :realBass == 4?"G#"
+ :realBass == 5?"A"
+ :realBass == 6?"A#"
+ :realBass == 7?"B"
+ :realBass == 8?"C"
+ :realBass == 9?"C#"
+ :realBass == 10?"D"
+ :"D#" // определяем самую низкую басовую ноту
+}`}
+
+}console.log("проверка 3 пройдена. идет цикл") 
+	}
+
+
+
+
+
+
+
+
+
+		// if(num>=12){
+		// 	while(note>=12){note-=12; x++}
+		// 	console.log(x+"значение икс")
+		// }
+
+// 		if (((smallNumbers.includes(note+7)||setAccord.has(note-5))&&(smallNumbers.includes(note+12)||numbers.includes(note+12)))
+// 		) {bass=note;
+// 			bassEqualsResult2()
+//  console.log("проверка 2 пройдена через квинту и тонику, "+`бас = ${bass}`);
+//  break
+// } else {
+// if 		(
+// 		((smallNumbers.includes((note+7)))&&((smallNumbers.includes(note+3)||smallNumbers.includes(note+4)||setAccord.has(note-8)||setAccord.has(note-9))))
+// 		) {
+// 	bass=note;
+// 	bassEqualsResult2()
+//  console.log("проверка 2 пройдена через квинту и мажор/минор, "+`бас = ${bass}`);
+//  break
+// } else {
+// 	if ((smallNumbers.includes(note+12)||numbers.includes(note+12))&&(smallNumbers.includes(note+3)||smallNumbers.includes(note+4)||setAccord.has(note-8)||setAccord.has(note-9))
+// 				) {
+// 		bass=note;
+// 		bassEqualsResult2()
+//  console.log("проверка 2 пройдена через тонику и мажор/минор, "+`бас = ${bass}`);
+//  break 
+// 				} else {
+// 		if ((smallNumbers.includes(note+3)||smallNumbers.includes(note+4)||setAccord.has(note-8)||setAccord.has(note-9))
+// 				) {
+// 		bass=note;
+// 		bassEqualsResult2()
+//  console.log("проверка 2 пройдена через мажор/минор, "+`бас = ${bass}`);
+//  break
+// 				} else {
+// 					if ((numbers.includes(note+12)||numbers.includes(note+24)||numbers.includes(note-12)||numbers.includes(note-24))
+// 				) {
+// 		bass=note;
+// 		bassEqualsResult2()
+//  console.log("проверка 2 пройдена через двойную тонику, "+`бас = ${bass}`);
+//  break} else {
+// 	bass = realBass
+// 	console.log("Я оказался неправ... Бас равен реалБасу" + `: ${bass}
+// 	А реалБас равен: ${realBass}`)
+// 	bassEqualsResult2()
+// 	break
+//  }
+				// }
+		
+		//}}}
+	
+
+
+
+
+}
+}}}}}
+function button(id,string) {
+if (id == "0" || id == "X"){
+	if (string == "sixb") {
+	document.getElementById("six").value = id
+} else if (string == "fiveb") {
+	document.getElementById("five").value = id
+} else if (string == "fourb") {
+	document.getElementById("four").value = id
+} else if(string == "threeb") {
+	document.getElementById("three").value = id
+} else if(string == "twob") {
+	document.getElementById("two").value = id
+} else if(string == "oneb") {
+	document.getElementById("one").value = id
+}
+}else
+{if (string == "sixb") {
+	document.getElementById("six").value = id.slice(4)
+} else if (string == "fiveb") {
+	document.getElementById("five").value = id.slice(4)
+} else if (string == "fourb") {
+	document.getElementById("four").value = id.slice(4)
+} else if(string == "threeb") {
+	document.getElementById("three").value = id.slice(4)
+} else if(string == "twob") {
+	document.getElementById("two").value = id.slice(4)
+} else if(string == "oneb") {
+	document.getElementById("one").value = id.slice(4)
+} }
+
+antiStarter.func()
+}
+
+let result1 = document.getElementById("result1")
+let result2 = document.getElementById("result2")
+let endBass
+		document.getElementById("resultbutton").addEventListener("click", antiStarter.func)
+		
+		
+
+		console.log("проверка 4 пройдена. Конец бешеной функции") 
+
+	</script>
 </body>
 
 
