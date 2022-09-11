@@ -13,7 +13,12 @@
 
 <body>
 	<header>Определитель аккордов для гитары</header>
-	<main><p class="margin-left">Напишите здесь лад, на которой зажата струна, или укажите этот лад на сруне ниже. Если струна открыта, пишите или жмите "0", а если не играется, то "X" (Без или с кавычками).</p></div>
+	<main><p class="margin-left">Напишите здесь лад, на которой зажата струна, или укажите этот лад на сруне ниже. Если струна открыта, пишите или жмите "0", а если не играется, то "X" (Без или с кавычками).</p>
+		<select name="select" id="audioVolume">
+			<option value="true" selected>Звук включён</option>
+			<option value="false">Звук выключен</option>
+		</select> 
+	</div>
 	<div class="flexbox input-box">
 		<textarea id="six" placeholder="Шестая струна"></textarea>
 		<textarea id="five" placeholder="Пятая струна"></textarea>
@@ -130,6 +135,7 @@
 	</tr>
 	</tbody>
 	</table>
+	<div id="audioContainer"></div>
 	</aside>
 </div>
 </main>
@@ -251,6 +257,21 @@ if (numbers.length == 0) {
 	let realBass = numbers[0];
 while(realBass>=12){realBass-=12;}
 
+// let audio = {}
+// for (let x = 0; x<46; x++) {
+// 	audio[x] = new Audio()
+// 	audio[x]["src"] = "/Ноты гитары" + x + ".wav"
+// 	audio[x]["autoplay"] = true
+// }
+document.getElementById("audioContainer").innerHTML = ""
+numbers.forEach(note => {
+	if (document.getElementById("audioVolume").value == "false"){}else{
+	document.getElementById("audioContainer").innerHTML +=
+	`<audio src="/Ноты гитары/${note}.wav" autoplay></audio>`
+	
+}})
+
+
 
 
 	info.innerHTML = `Это нота ${realBass == 0?"E"
@@ -275,6 +296,18 @@ Array.prototype.min = function() {
   return Math.min.apply(null, this);
 };
 // Конец шаблона
+
+
+document.getElementById("audioContainer").innerHTML = ""
+numbers.forEach(note => {
+	if (document.getElementById("audioVolume").value == "false"){}else{
+	document.getElementById("audioContainer").innerHTML +=
+	`<audio src="/Ноты гитары/${note}.wav" autoplay></audio>`
+	
+}})
+
+
+
 
 let realBass = numbers.min() // Переопределяем самую низкую ноту
 while (realBass >= 12) {realBass-=12;}
@@ -491,6 +524,24 @@ function realBassEquals() {	object.result.innerHTML +=
 }`}
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 console.log(`бас :${bass}`)
 if (bass == undefined)  {
 object.info.innerHTML = " Упс, что-то пошло не так. мы не смогли определить основную ноту аккорда. "
@@ -509,10 +560,42 @@ if (bass!=realBass) {
  :"D#" // определяем самую низкую басовую ноту
 }`}
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }console.log("проверка 3 пройдена. идет цикл") 
 	}
-
-
 
 
 
