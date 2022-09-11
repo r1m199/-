@@ -260,14 +260,14 @@ while(realBass>=12){realBass-=12;}
 // let audio = {}
 // for (let x = 0; x<46; x++) {
 // 	audio[x] = new Audio()
-// 	audio[x]["src"] = "/Ноты гитары" + x + ".wav"
+// 	audio[x]["src"] = "/audio" + x + ".wav"
 // 	audio[x]["autoplay"] = true
 // }
 document.getElementById("audioContainer").innerHTML = ""
 numbers.forEach(note => {
 	if (document.getElementById("audioVolume").value == "false"){}else{
 	document.getElementById("audioContainer").innerHTML +=
-	`<audio src="/Ноты гитары/${note}.wav" autoplay></audio>`
+	`<audio src="/audio/${note}.wav" autoplay></audio>`
 	
 }})
 
@@ -302,7 +302,7 @@ document.getElementById("audioContainer").innerHTML = ""
 numbers.forEach(note => {
 	if (document.getElementById("audioVolume").value == "false"){}else{
 	document.getElementById("audioContainer").innerHTML +=
-	`<audio src="/Ноты гитары/${note}.wav" autoplay></audio>`
+	`<audio src="/audio/${note}.wav" autoplay></audio>`
 	
 }})
 
