@@ -267,32 +267,46 @@ while(realBass>=12){realBass-=12;}
 
 let audioObj = {}
 numbers.forEach(note => {
-	if (document.getElementById("audioVolume").value == "true"){
+	//if (document.getElementById("audioVolume").value == "true"){
 	document.getElementById("audioContainer").innerHTML +=
 	`<audio src="/audio/${note}.wav" class="audioBlock"></audio>`
-	}
+	//}
 	//audioObj[note] = new Audio(`/audio/${note}.wav`)
+
 })
+
+
+
 
 
 let audioBlocks = document.getElementsByClassName("audioBlock")
 for (let i = 0; i <=audioBlocks.length; i++){ 
 	if (audioBlocks.item(i)!=null){
 	let element = audioBlocks.item(i)
+	setTimeout(function() {
+	//	element.setAttribute("autoplay","");
+		element.volume = audioVolume
+		element.play()
+	}, i*delay)	
+}}
+//let audioBlocks = document.getElementsByClassName("audioBlock")
+//for (let i = 0; i <=audioBlocks.length; i++){ 
+//	if (audioBlocks.item(i)!=null){
+//	let element = audioBlocks.item(i)
 	//setTimeout(function() {
 	//	element.setAttribute("autoplay","");
 //	}, 1000)	
-}}
+//}}
 //let audioObjKeys = Object.keys(audioObj)
-for (let key in audioObj) {
+//for (let key in audioObj) {
 	//let i = 0, max = 3, delay = 1000, run;
-	let i = 0
-	function playNote() {
-	
+//	let i = 0
+//	function playNote() {
+//	
 	//if (i==1) {return}
 
 //	i++
-	audioObj[key].play()
+//	audioObj[key].play()
 	//let time = setTimeout(playNote,+30/key+1+1000)
 	// if(i > 3){
 	// 	//clearTimeout(time)
@@ -300,19 +314,19 @@ for (let key in audioObj) {
           // }
 	//	   return
 	//setTimeout(playNote(), 1000)
-	}
+//	}
 	//run = function(){
    //       if(i++ < max){
     //        setTimeout(run, delay);
     //     }
   //  }
-  playNote()
+ // playNote()
 //setTimeout(playNote,+key*30)
 //	run();
 	//return false
 //setInterval(playNote(),1000)
 //	setTimeout(playNote, 0)	
-}
+//}
 // {}else{ то же самое. ЧТО
 
 
