@@ -14,10 +14,14 @@
 <body>
 	<header>Определитель аккордов для гитары</header>
 	<main><p class="margin-left">Напишите здесь лад, на которой зажата струна, или укажите этот лад на сруне ниже. Если струна открыта, пишите или жмите "0", а если не играется, то "X" (Без или с кавычками).</p>
-		<select name="select" id="audioVolume">
+		<!-- <select name="select" id="audioVolume">
 			<option value="true" selected>Звук включён</option>
 			<option value="false">Звук выключен</option>
-		</select> 
+		</select>  -->
+		<div class="flexbox center space-between margin">
+			<div class="flexbox center blacknwhite border-radius space-between min-width"><div class="margin option-text">Громкость<br> звука </div><img class="volume" src="/images/volume.png"><input id="audioVolume" type="range" min="0" max="1" step="0.01"></div>
+			<div class="flexbox center blacknwhite border-radius space-between min-width"><div class="margin option-text">Задержка между <br>нотами </div><input id="delay" type="number" value="0.1" min="0" max="2.000" step="0.05"><div class="margin option-text" >с.</div></div>
+		</div>
 	</div>
 	<div class="flexbox input-box">
 		<textarea id="six" placeholder="Шестая струна"></textarea>
@@ -94,13 +98,13 @@
 	<p>Нажмите на лад на струнах, Вы получите результаты. Условные обозначения: <br>
 	0 - открытая струна<br>
 	X - струна не играется<br>
-	1-40 - номера ладов и порожков<br>
+	1-40 - номера ладов и порожков<br>	</p>
 	<div class="center">
 			<div class="ball">
 			</div> 
 	 - зажатый лад
 	</div>
-	</p><!-- здесь ошибка -->
+
 	<table>
 		<thead>
 			<tr>
@@ -242,7 +246,12 @@ if (String(f) == "NaN") {one.innerHTML = "X";} else {numbers.push(f)
 }
 }
 
-
+document.getElementById("audioContainer").innerHTML = ""
+// ДОБАВИТЬ ИНТЕРАКТИВ
+// ,TAJH FANTH
+//CSS - БИБЛИОТЕКИ
+let delay = +document.getElementById("delay").value * 1000
+,audioVolume = document.getElementById("audioVolume").value
 
 if (document.getElementById("six").value>40||
 document.getElementById("five").value>40||
@@ -250,28 +259,61 @@ document.getElementById("four").value>40||
 document.getElementById("three").value>40||
 document.getElementById("two").value>40||
 document.getElementById("one").value>40) {info.innerHTML = `У вас странная гитара, больше 40 ладов...`;} else {
-
 if (numbers.length == 0) {
 	info.innerHTML = "Введите хотя бы одно значение";
 } else { if (numbers.length == 1) { 
 	let realBass = numbers[0];
 while(realBass>=12){realBass-=12;}
 
-// let audio = {}
-// for (let x = 0; x<46; x++) {
-// 	audio[x] = new Audio()
-// 	audio[x]["src"] = "/audio" + x + ".wav"
-// 	audio[x]["autoplay"] = true
-// }
-document.getElementById("audioContainer").innerHTML = ""
+let audioObj = {}
 numbers.forEach(note => {
-	if (document.getElementById("audioVolume").value == "false"){}else{
+	if (document.getElementById("audioVolume").value == "true"){
 	document.getElementById("audioContainer").innerHTML +=
-	`<audio src="/audio/${note}.wav" autoplay></audio>`
+	`<audio src="/audio/${note}.wav" class="audioBlock"></audio>`
+	}
+	//audioObj[note] = new Audio(`/audio/${note}.wav`)
+})
+
+
+let audioBlocks = document.getElementsByClassName("audioBlock")
+for (let i = 0; i <=audioBlocks.length; i++){ 
+	if (audioBlocks.item(i)!=null){
+	let element = audioBlocks.item(i)
+	//setTimeout(function() {
+	//	element.setAttribute("autoplay","");
+//	}, 1000)	
+}}
+//let audioObjKeys = Object.keys(audioObj)
+for (let key in audioObj) {
+	//let i = 0, max = 3, delay = 1000, run;
+	let i = 0
+	function playNote() {
 	
-}})
+	//if (i==1) {return}
 
-
+//	i++
+	audioObj[key].play()
+	//let time = setTimeout(playNote,+30/key+1+1000)
+	// if(i > 3){
+	// 	//clearTimeout(time)
+	//    return//       setTimeout(playNote, 3000);
+          // }
+	//	   return
+	//setTimeout(playNote(), 1000)
+	}
+	//run = function(){
+   //       if(i++ < max){
+    //        setTimeout(run, delay);
+    //     }
+  //  }
+  playNote()
+//setTimeout(playNote,+key*30)
+//	run();
+	//return false
+//setInterval(playNote(),1000)
+//	setTimeout(playNote, 0)	
+}
+// {}else{ то же самое. ЧТО
 
 
 	info.innerHTML = `Это нота ${realBass == 0?"E"
@@ -297,14 +339,55 @@ Array.prototype.min = function() {
 };
 // Конец шаблона
 
-
-document.getElementById("audioContainer").innerHTML = ""
+let audioObj = {}
 numbers.forEach(note => {
-	if (document.getElementById("audioVolume").value == "false"){}else{
+	//if (document.getElementById("audioVolume").value == "true"){
 	document.getElementById("audioContainer").innerHTML +=
-	`<audio src="/audio/${note}.wav" autoplay></audio>`
+	`<audio src="/audio/${note}.wav" class="audioBlock"></audio>`
+	//}
+	//audioObj[note] = new Audio(`/audio/${note}.wav`)
+})
+
+
+let audioBlocks = document.getElementsByClassName("audioBlock")
+for (let i = 0; i <=audioBlocks.length; i++){ 
+	if (audioBlocks.item(i)!=null){
+	let element = audioBlocks.item(i)
+	setTimeout(function() {
+	//	element.setAttribute("autoplay","");
+		element.volume = audioVolume
+		element.play()
+	}, i*delay)	
+}}
+//let audioObjKeys = Object.keys(audioObj)
+//for (let key in audioObj) {
+	//let i = 0, max = 3, delay = 1000, run;
+	//let i = 0
+	//function playNote() {
 	
-}})
+	//if (i==1) {return}
+
+	//i++
+	//audioObj[key].play()
+	//let time = setTimeout(playNote,+30/key+1+1000)
+	// if(i > 3){
+	// 	//clearTimeout(time)
+	//    return//       setTimeout(playNote, 3000);
+          // }
+	//	   return
+	//setTimeout(playNote(), 1000)
+//	}
+	//run = function(){
+   //       if(i++ < max){
+    //        setTimeout(run, delay);
+    //     }
+  //  }
+//setTimeout(playNote,+key*30)
+//	run();
+	//return false
+//setInterval(playNote(),1000)
+//	setTimeout(playNote, 0)	
+//}
 
 
 

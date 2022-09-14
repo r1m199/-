@@ -18,6 +18,9 @@
 .fixed{
     position: fixed;
 }
+.margin{
+    margin: 1vw;
+}
 .absolute{
     position: absolute;
 }
@@ -186,6 +189,9 @@ text-shadow: black 0px 0px 3px;
 text-align: center;
 background: orange;
 padding: 5px;
+position: sticky;
+top: 0;
+z-index: 4;
 }
 
 * {
@@ -270,17 +276,23 @@ textarea{
     font-size: 20px;
     height: 50px;
 }
-
+.space-around{
+    justify-content: space-around;
+}
+.border-radius{
+    border-radius: 50px 50px;
+}
 .center{
     display: flex;
    align-items: center;
 }
 aside{
-    margin-left: 7%;
+    /* margin-left: 7%; */
     margin-right: 7%;
     min-width: 200px;
     width: 450px;
     max-width: 100%;
+    flex-grow: 2;
 }
 .margin-left{
     margin-left:10px ;
@@ -288,7 +300,9 @@ aside{
 .zero-and-X div{
     min-width: 24px;
 
+
 }
+
 footer{
     background: rgb(37, 37, 37);
     color: white;
@@ -311,4 +325,75 @@ select{
     width: 170px;
     height: 40px;
     font-size: 20px;
+}
+button::before{
+    cursor: pointer;
+    content: "";
+    position:absolute;
+    /* width: 100%;
+    height: 100%; */
+    top: -5px;
+    right: -5px;
+    bottom: -5px;
+    left: -5px;
+}
+button{
+    position:relative;
+}
+.volume{
+  max-width: 10%;
+    max-height: 10%;
+       /*width: 50px;
+    height: 50px;*/
+    flex-grow: 1;
+}
+#audioVolume{
+    width: calc(0px + 10vw);
+    flex-grow: 1;
+    /* margin-right: 20px; */
+    margin: 5px 30px 5px 10px;
+
+}
+.space-between{
+    justify-content: space-between;
+}
+#delay{
+    font-size: calc(15px + 1vw);
+    width: 10vw;
+}
+.flexbox .space-between {
+    flex: 1;
+    margin: auto 20px auto 20px;
+    /* font-size: ; */
+}
+.option-text{
+font-size: calc(5px + 1vw);
+text-align: center;
+}
+.min-width{
+    min-width: calc(30px + 20%);
+}
+button:hover{
+    cursor: pointer;
+}
+textarea{
+    resize: none;
+}
+#resultbutton:hover{
+    background: rgb(255, 197, 146);
+}
+#resultbutton:active{
+    background: rgb(255, 119, 0);
+}
+.chord-sounds button:hover{
+    background: rgb(255, 197, 146);
+}
+.chord-sounds button:active{
+    background: rgb(255, 119, 0);
+}
+textarea:focus{
+    background: rgb(255, 197, 146);
+}
+.chord{
+    margin-right: 7%;
 }
