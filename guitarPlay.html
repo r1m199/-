@@ -19,7 +19,7 @@
 			<option value="false">Звук выключен</option>
 		</select>  -->
 		<div class="flexbox center space-between margin">
-			<div class="flexbox center blacknwhite border-radius space-between min-width"><!-- <div class="margin option-text">Громкость<br> звука </div> --><img class="volume" src="/images/volume.png" alt="volume"><input id="audioVolume" type="range" min="0" max="1" step="0.01"></div>
+			<div class="flexbox center blacknwhite border-radius space-between min-width"><div class="margin option-text">Громкость<br> звука </div><img class="volume" src="/images/volume.png"><input id="audioVolume" type="range" min="0" max="1" step="0.01"></div>
 			<div class="flexbox center blacknwhite border-radius space-between min-width"><div class="margin option-text">Задержка между <br>нотами </div><input id="delay" type="number" value="0.1" min="0" max="2.000" step="0.05"><div class="margin option-text" >с.</div></div>
 		</div>
 	</div>
@@ -364,6 +364,7 @@ numbers.forEach(note => {
 
 
 let audioBlocks = document.getElementsByClassName("audioBlock")
+function strikeDown() {
 for (let i = 0; i <=audioBlocks.length; i++){ 
 	if (audioBlocks.item(i)!=null){
 	let element = audioBlocks.item(i)
@@ -373,38 +374,25 @@ for (let i = 0; i <=audioBlocks.length; i++){
 		element.play()
 	}, i*delay)	
 }}
-//let audioObjKeys = Object.keys(audioObj)
-//for (let key in audioObj) {
-	//let i = 0, max = 3, delay = 1000, run;
-	//let i = 0
-	//function playNote() {
-	
-	//if (i==1) {return}
-
-	//i++
-	//audioObj[key].play()
-	//let time = setTimeout(playNote,+30/key+1+1000)
-	// if(i > 3){
-	// 	//clearTimeout(time)
-	//    return//       setTimeout(playNote, 3000);
-          // }
-	//	   return
-	//setTimeout(playNote(), 1000)
-//	}
-	//run = function(){
-   //       if(i++ < max){
-    //        setTimeout(run, delay);
-    //     }
-  //  }
-//setTimeout(playNote,+key*30)
-//	run();
-	//return false
-//setInterval(playNote(),1000)
-//	setTimeout(playNote, 0)	
-//}
-
-
-
+}
+function strikeUp() {
+for (let i = 0; i <=audioBlocks.length; i++){ 
+	if (audioBlocks.item(i)!=null){
+	let element = audioBlocks.item(i)
+	setTimeout(function() {
+	//	element.setAttribute("autoplay","");
+		element.volume = audioVolume
+		element.play()
+	}, (i)*(-1)*delay+1000)	
+}}
+}
+// strikeDown()
+// setTimeout(strikeDown(), delay*1000)
+setTimeout(strikeUp(), delay*10*2)
+setTimeout(alert(), delay)
+// setTimeout(strikeUp(), delay*100*3)
+// setTimeout(strikeDown(), delay*100*4)
+// setTimeout(strikeDown(), delay*100*5)
 
 let realBass = numbers.min() // Переопределяем самую низкую ноту
 while (realBass >= 12) {realBass-=12;}

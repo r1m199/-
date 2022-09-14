@@ -299,10 +299,10 @@ aside{
 }
 .zero-and-X div{
     min-width: 24px;
-
-
 }
-
+.volume{
+    margin-left:15px ;
+}
 footer{
     background: rgb(37, 37, 37);
     color: white;
@@ -348,11 +348,10 @@ button{
     flex-grow: 1;
 }
 #audioVolume{
-    width: calc(0px + 10vw);
+    width: 10%;
     flex-grow: 1;
     /* margin-right: 20px; */
-    margin: 5px 30px 5px 10px;
-
+    margin: 5px 10px 5px 10px;
 }
 .space-between{
     justify-content: space-between;
@@ -378,7 +377,8 @@ button:hover{
 }
 textarea{
     resize: none;
-}
+    font-size: calc(1vw + 7px);
+} 
 #resultbutton:hover{
     background: rgb(255, 197, 146);
 }
@@ -397,3 +397,4 @@ textarea:focus{
 .chord{
     margin-right: 7%;
 }
+
